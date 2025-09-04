@@ -150,5 +150,8 @@ cython_debug/
 Thumbs.db
 ehthumbs.db
 
+# PyPI configuration (contains tokens)
+.pypirc
+
 # Cursor
 .cursor/
