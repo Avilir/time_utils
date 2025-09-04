@@ -1,5 +1,5 @@
 """
-time_utils - A collection of time-related utility functions for Python.
+alt_time_utils - A collection of time-related utility functions for Python.
 
 This package provides utilities for working with timestamps, timezones,
 and time formatting in Python applications.

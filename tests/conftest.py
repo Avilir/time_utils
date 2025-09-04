@@ -1,5 +1,5 @@
 """
-pytest configuration and fixtures for time_utils tests.
+pytest configuration and fixtures for alt_time_utils tests.
 """
 
 from datetime import datetime, timedelta, timezone

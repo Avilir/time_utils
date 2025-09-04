@@ -1,1 +1,1 @@
-"""Tests for time_utils package."""
+"""Tests for alt_time_utils package."""

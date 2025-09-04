@@ -1,5 +1,5 @@
 """
-Tests for time_utils.core module.
+Tests for alt_time_utils.core module.
 """
 
 from datetime import datetime, timedelta, timezone
