@@ -1,5 +1,5 @@
 """
-Constants used throughout the time_utils package.
+Constants used throughout the alt_time_utils package.
 """
 
 # Time format constants

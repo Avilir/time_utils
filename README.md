@@ -1,4 +1,4 @@
-# time-utils
+# ALT-time-utils
 
 A collection of time-related utility functions for Python applications.
 
@@ -18,13 +18,13 @@ A collection of time-related utility functions for Python applications.
 ## Installation
 
 ```bash
-pip install time-utils
+pip install ALT-time-utils
 ```
 
 ## Quick Start
 
 ```python
-from time_utils import (
+from alt_time_utils import (
     get_utc_timestamp,
     get_utc_timestamp_string,
     format_duration,
@@ -184,7 +184,7 @@ Format any datetime as UTC ISO string with 'Z' suffix.
 ### Working with Log Files
 
 ```python
-from time_utils import get_file_timestamp, get_date_string
+from alt_time_utils import get_file_timestamp, get_date_string
 import os
 
 # Create timestamped log file
@@ -199,7 +199,7 @@ os.makedirs(f"logs/{date_dir}", exist_ok=True)
 ### Duration Tracking
 
 ```python
-from time_utils import get_utc_timestamp, format_duration
+from alt_time_utils import get_utc_timestamp, format_duration
 
 start_time = get_utc_timestamp()
 
@@ -213,7 +213,7 @@ print(f"Operation took: {format_duration(duration)}")
 ### Timezone-Aware Operations
 
 ```python
-from time_utils import local_to_utc, utc_to_local, get_local_utc_offset
+from alt_time_utils import local_to_utc, utc_to_local, get_local_utc_offset
 from datetime import datetime
 
 # Schedule something in local time, store in UTC

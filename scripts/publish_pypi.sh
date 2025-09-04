@@ -1,9 +1,9 @@
 #!/bin/bash
-# publish_pypi.sh - Publish time_utils to PyPI (test or production)
+# publish_pypi.sh - Publish ALT-time-utils to PyPI (test or production)
 
 set -e  # Exit on error
 
-echo "=== PyPI Publishing Script for time_utils ==="
+echo "=== PyPI Publishing Script for ALT-time-utils ==="
 
 # Check if virtual environment is active
 if [ -z "$VIRTUAL_ENV" ]; then

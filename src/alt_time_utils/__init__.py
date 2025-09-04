@@ -1,11 +1,11 @@
 """
-time_utils - A collection of time-related utility functions for Python.
+alt_time_utils - A collection of time-related utility functions for Python.
 
 This package provides utilities for working with timestamps, timezones,
 and time formatting in Python applications.
 """
 
-from time_utils.core import (
+from alt_time_utils.core import (
     format_duration,
     format_utc_timestamp,
     get_date_string,

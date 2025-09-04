@@ -1,5 +1,5 @@
 """
-pytest configuration and fixtures for time_utils tests.
+pytest configuration and fixtures for alt_time_utils tests.
 """
 
 from datetime import datetime, timedelta, timezone
@@ -50,4 +50,4 @@ def mock_current_time(monkeypatch: Any) -> None:
                 return fixed_time.astimezone(tz)
             return fixed_time.replace(tzinfo=None)
 
-    monkeypatch.setattr("time_utils.core.datetime", MockDatetime)
+    monkeypatch.setattr("alt_time_utils.core.datetime", MockDatetime)
