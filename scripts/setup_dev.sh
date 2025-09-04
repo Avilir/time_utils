@@ -1,9 +1,9 @@
 #!/bin/bash
-# setup_dev.sh - Set up development environment for time_utils
+# setup_dev.sh - Set up development environment for ALT-time-utils
 
 set -e  # Exit on error
 
-echo "=== Setting up time_utils development environment ==="
+echo "=== Setting up ALT-time-utils development environment ==="
 
 # Check Python version
 echo "Checking Python version..."

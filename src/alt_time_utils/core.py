@@ -5,7 +5,7 @@ Core time-related utility functions.
 import time
 from datetime import datetime, timezone
 
-from time_utils.constants import (
+from alt_time_utils.constants import (
     DATE_STRING_FORMAT,
     DURATION_DECIMAL_PLACES,
     FILE_TIMESTAMP_FORMAT,

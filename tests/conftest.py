@@ -50,4 +50,4 @@ def mock_current_time(monkeypatch: Any) -> None:
                 return fixed_time.astimezone(tz)
             return fixed_time.replace(tzinfo=None)
 
-    monkeypatch.setattr("time_utils.core.datetime", MockDatetime)
+    monkeypatch.setattr("alt_time_utils.core.datetime", MockDatetime)

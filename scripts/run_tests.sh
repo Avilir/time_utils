@@ -1,9 +1,9 @@
 #!/bin/bash
-# run_tests.sh - Run tests with coverage for time_utils
+# run_tests.sh - Run tests with coverage for ALT-time-utils
 
 set -e  # Exit on error
 
-echo "=== Running time_utils tests ==="
+echo "=== Running ALT-time-utils tests ==="
 
 # Check if virtual environment exists
 if [ ! -d "venv" ]; then

@@ -1,9 +1,9 @@
 #!/bin/bash
-# build.sh - Build source and wheel distributions for time_utils
+# build.sh - Build source and wheel distributions for ALT-time-utils
 
 set -e  # Exit on error
 
-echo "=== Building time_utils distributions ==="
+echo "=== Building ALT-time-utils distributions ==="
 
 # Check if virtual environment exists
 if [ ! -d "venv" ]; then

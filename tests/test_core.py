@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from typing import Any
 from unittest.mock import patch
 
-from time_utils.core import (
+from alt_time_utils.core import (
     format_duration,
     format_utc_timestamp,
     get_date_string,
@@ -54,7 +54,7 @@ class TestGetUTCTimestampString:
         parsed = datetime.fromisoformat(result.replace("Z", "+00:00"))
         assert parsed.tzinfo is not None
 
-    @patch("time_utils.core.get_utc_timestamp")
+    @patch("alt_time_utils.core.get_utc_timestamp")
     def test_formats_correctly(self, mock_get_utc: Any) -> None:
         """Test correct formatting of timestamp."""
         mock_time = datetime(2025, 1, 15, 12, 30, 45, 123456, tzinfo=timezone.utc)
@@ -219,7 +219,7 @@ class TestGetFileTimestamp:
         assert result[:8].isdigit()  # Date part
         assert result[9:].isdigit()  # Time part
 
-    @patch("time_utils.core.get_utc_timestamp")
+    @patch("alt_time_utils.core.get_utc_timestamp")
     def test_uses_utc(self, mock_get_utc: Any) -> None:
         """Test that function uses UTC time."""
         mock_time = datetime(2025, 1, 15, 12, 30, 45, tzinfo=timezone.utc)
@@ -237,7 +237,7 @@ class TestGetDateString:
         assert len(result) == 8  # YYYYMMDD
         assert result.isdigit()
 
-    @patch("time_utils.core.get_utc_timestamp")
+    @patch("alt_time_utils.core.get_utc_timestamp")
     def test_uses_utc(self, mock_get_utc: Any) -> None:
         """Test that function uses UTC date."""
         mock_time = datetime(2025, 1, 15, 12, 30, 45, tzinfo=timezone.utc)
@@ -255,7 +255,7 @@ class TestGetTimeString:
         assert len(result) == 6  # HHMMSS
         assert result.isdigit()
 
-    @patch("time_utils.core.get_utc_timestamp")
+    @patch("alt_time_utils.core.get_utc_timestamp")
     def test_uses_utc(self, mock_get_utc: Any) -> None:
         """Test that function uses UTC time."""
         mock_time = datetime(2025, 1, 15, 12, 30, 45, tzinfo=timezone.utc)

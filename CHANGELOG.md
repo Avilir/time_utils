@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2025-09-04
 
 ### Added
-- Initial release of time-utils package
+- Initial release of ALT-time-utils package
 - Core time utility functions:
   - `get_utc_timestamp()` - Get current UTC timestamp
   - `get_utc_timestamp_string()` - Get UTC timestamp as ISO string with 'Z' suffix
