@@ -1,4 +1,4 @@
-.PHONY: help setup test lint format type-check build clean install-dev all
+.PHONY: help setup test lint format type-check build clean install-dev all publish-test publish-prod
 
 # Default target
 all: lint type-check test
@@ -13,6 +13,8 @@ help:
 	@echo "  build        - Build source and wheel distributions"
 	@echo "  clean        - Clean build artifacts"
 	@echo "  install-dev  - Install package in development mode"
+	@echo "  publish-test - Publish to TestPyPI"
+	@echo "  publish-prod - Publish to production PyPI"
 	@echo "  all          - Run lint, type-check, and test"
 
 setup:
@@ -63,3 +65,11 @@ clean:
 install-dev:
 	@echo "Installing package in development mode..."
 	. venv/bin/activate && pip install -e .
+
+publish-test: build
+	@echo "Publishing to TestPyPI..."
+	./scripts/publish_pypi.sh test
+
+publish-prod: build
+	@echo "Publishing to production PyPI..."
+	./scripts/publish_pypi.sh prod
